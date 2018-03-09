@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>A Multiplayer Game</title>
+    <style>
+      canvas {
+        width: 800px;
+        height: 600px;
+        border: 5px solid black;
+      }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <textarea readonly id='playercards' style="width:300px;height:300px;resize:none"></textarea>
+    <textarea readonly id='notepad' style="width:300px;height:300px;resize:none"></textarea>
+    <br></br>
+    <textarea readonly id='msgbox' style="width:810px;height:60px;resize:none;"></textarea>
+  </body>
+  <script src="/static/game.js"></script>
+</html>
