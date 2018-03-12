@@ -63,3 +63,11 @@ socket.on('state', function(players) {
     context.fill();
   }
 });
+
+var playercards = document.getElementById('playercards');
+socket.on('card', function(cards) {
+  console.log('getting card ' + cards);
+  cards.toString().split(',').forEach(function(card) {
+    playercards.value = playercards.value + '\n' + card;
+  });
+});
